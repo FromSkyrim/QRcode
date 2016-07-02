@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.fatty.zxingqrcode.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Scan"
+        android:onClick="scan"
+        android:id="@+id/start_scan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result:"
+        android:textSize="16sp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/start_scan"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_result"
+        android:textSize="16sp"
+        android:layout_below="@+id/textView"
+        />
+
+    <Button
+        android:id="@+id/btn_makeqrcode"
+        android:text="Make QR Code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:onClick="make"
+        android:layout_below="@+id/tv_result"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/et_input"
+        android:hint="Input your message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_makeqrcode"
+        />
+
+    <ImageView
+        android:id="@+id/iv_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        android:layout_below="@+id/et_input"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/cb_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_input"
+        android:layout_alignStart="@+id/et_input" />
+
+
+
+</RelativeLayout>
